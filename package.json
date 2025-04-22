@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bunx tsc",
     "start": "bun ./src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.8.0",
   "dependencies": {
     "@types/express": "^5.0.1",
     "express": "^5.1.0"
