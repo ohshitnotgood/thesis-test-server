@@ -24,4 +24,3 @@ v1Router.get("/plain-text", (req: Request, res: Response) => {
     þau er fremst um man."
     res.send(response)
 })
-
