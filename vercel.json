@@ -1,11 +1,6 @@
 {
     "buildCommand": "bun run build",
     "outputDirectory": "dist",
-    "functions": {
-      "index.js": {
-        "runtime": "nodejs18.x"
-      }
-    },
     "routes": [
       {
         "src": "/(.*)",
