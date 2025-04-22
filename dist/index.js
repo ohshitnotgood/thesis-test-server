@@ -11,6 +11,7 @@ exports.app = (0, express_1.default)();
 const port = 3000;
 exports.app.use("/v1", v1router_1.v1Router);
 exports.app.use("/v2/", v2router_1.v2Router);
-exports.app.listen(port, "0.0.0.0", () => {
+exports.app.listen(port, () => {
     console.log("starting server");
 });
+exports.default = exports.app;

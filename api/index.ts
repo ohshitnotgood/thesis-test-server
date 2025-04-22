@@ -11,3 +11,5 @@ app.use("/v2/", v2Router)
 app.listen(port, () => {
     console.log("starting server")
 })
+
+export default app
