@@ -8,6 +8,6 @@ const port = 3000
 app.use("/v1", v1Router)
 app.use("/v2/", v2Router)
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(port, () => {
     console.log("starting server")
 })
