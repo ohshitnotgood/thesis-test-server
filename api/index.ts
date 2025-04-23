@@ -7,7 +7,7 @@ export const app = express()
 const port = 3000
 
 const corsOptions = {
-    origin: ['https://test-frontend-ssr.vercel.app']
+    origin: ['https://test-frontend-ssr.vercel.app', 'http://localhost:3000']
 }
 
 app.use(cors(corsOptions))
