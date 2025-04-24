@@ -1,14 +1,27 @@
+import { createId } from '@paralleldrive/cuid2'
 import express, { Request, Response } from 'express'
 export const v1Router = express.Router()
 
 /**
- * JSON route
+ * JSON GET route
  */
 v1Router.get("/json", (req: Request, res: Response) => {
     const response = {
-        "usrId": "someUserId_but_this_should_be_ignored",
-        "ssnId": "someSessionId_but_this_should_also_be_ignored",
-        "rndField": "randomFieldShouldBeDetected_but_not_this_msg"
+        "usrId": createId(),
+        "ssnId": createId(),
+        "rndField": createId(),
+    }
+    res.json(response)
+})
+
+/**
+ * JSON PUT route
+ */
+v1Router.put("/json", (req: Request, res: Response) => {
+    const response = {
+        "usrId": createId(),
+        "ssnId": createId(),
+        "rndField": createId(),
     }
     res.json(response)
 })
